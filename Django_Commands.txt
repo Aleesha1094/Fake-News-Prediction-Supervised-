@@ -1,0 +1,30 @@
+<<<<< RUN YOUR WINDOWS POWERSHELL AS ADMINISTRATOR AND RUN COMMAND >>>>>>
+
+Set-ExecutionPolicy RemoteSigned
+
+
+<<<<< CREATE A FOLDER " fake-news-detector" and open it in VS CODE. OPEN NEW TERMINAL THERE >>>>>
+ 
+python.exe -m pip install --upgrade pip     #Upgrade your pip
+
+python -m venv myenv                      #create a virtual enviroment
+
+myenv/Scripts/activate                      #activate your virtual enviroment
+
+pip install Django                         #install your django application
+
+pip install Django==3.2.9                   #installs latest version of django #optional command
+
+django-admin startproject <project name>      #creates a django project
+
+cd <project name>                        #redirect to yourproject diectory
+
+python manage.py runserver                    #runs you server application
+
+------------ CREATE SUPER USER -----------
+python manage.py createsuperuser
+
+------------- MIGRATION COMMANDS---------
+python manage.py migrate                       #creates default migrations
+
+
